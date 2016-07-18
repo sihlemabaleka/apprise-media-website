@@ -765,12 +765,12 @@ ul.social-buttons {
 
 ul.social-buttons li a {
     display: block;
-    background-color: #222222;
-    height: 40px;
-    width: 40px;
+    background-color: #171717;
+    height: 50px;
+    width: 50px;
     border-radius: 100%;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 50px;
     color: white;
     outline: none;
     -webkit-transition: all 0.3s;
@@ -778,10 +778,31 @@ ul.social-buttons li a {
     transition: all 0.3s;
 }
 
+@media (min-width: 768px) {
+    ul.social-buttons li a {
+        display: block;
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        font-size: 20px;
+        line-height: 50px;
+        color: white;
+        outline: none;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+}
+
+.facebook {
+    color: #0099ff;
+}
+
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #fed136;
+    color: #fed136;
 }
 
 .btn:focus,
